@@ -20,7 +20,7 @@
 	src="<%=ORSView.APP_CONTEXT%>/js/CheckBox11.js"></script>
 <style>
 .hm {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/list2.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/CustomList.png');
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -66,7 +66,7 @@
 				if (list.size() != 0) {
 			%>
 			<center>
-				<h1 class="text-dark font-weight-bold pt-3">
+				<h1 class="text-white font-weight-bold pt-3">
 					<u>User List</u>
 				</h1>
 			</center>

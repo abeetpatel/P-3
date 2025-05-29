@@ -46,13 +46,12 @@ i.css {
 }
 
 .p4 {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/loginhere.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/CustomLogin.png');
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 75px;
-/*background-position: center top;*/
-	
+	/*background-position: center top;*/
 }
 </style>
 
@@ -74,7 +73,9 @@ i.css {
 					<div class="card input-group-addon grad	">
 						<div class="card-body">
 
-							<h3 class="text-center text-dark"><b>Login</b></h3>
+							<h3 class="text-center text-dark">
+								<b>Login</b>
+							</h3>
 							<!--Body-->
 							<div>
 
@@ -168,8 +169,8 @@ i.css {
 							</div>
 							<div class="text-center">
 								<a href="<%=ORSView.FORGET_PASSWORD_CTL%>"
-									style="color: black; font-size: 15px;"><b><u>Forget my
-										password ?</b></u></a>
+									style="color: black; font-size: 15px;"><b><u>Forget
+											my password ?</b></u></a>
 							</div>
 							<input type="hidden" name="uri" value="<%=uri%>">
 						</div>

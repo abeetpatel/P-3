@@ -12,7 +12,8 @@ import org.apache.log4j.Logger;
 import in.co.rays.project_3.util.ServletUtility;
 
 /**
- * welcome functionality controller.to  show welcome page
+ * welcome functionality controller.to show welcome page
+ * 
  * @author Abeet Patel
  *
  */
@@ -31,7 +32,7 @@ public class WelcomeCtl extends BaseCtl {
 			throws ServletException, IOException {
 		log.debug("WelcomeCtl Method doGet Started");
 
-		ServletUtility.forward(ORSView.WELCOME_VIEW, request, response);
+		ServletUtility.forward(getView(), request, response);
 
 		log.debug("WelcomeCtl Method doGet Ended");
 	}
@@ -42,4 +43,3 @@ public class WelcomeCtl extends BaseCtl {
 	}
 
 }
-

@@ -19,10 +19,10 @@ public class ProductModelHibImp implements ProductModelInt {
 	public long add(ProductDTO dto) throws ApplicationException, DuplicateRecordException {
 		Session session = null;
 		Transaction tx = null;
-//		ProductDTO duplicateCollegeName = fingByName(dto.getProductName());
-//		if (duplicateCollegeName != null) {
-//			throw new DuplicateRecordException("college name already exist");
-//		}
+		ProductDTO duplicateCollegeName = fingByName(dto.getProductName());
+		if (duplicateCollegeName != null) {
+			throw new DuplicateRecordException("college name already exist");
+		}
 		try {
 			session = HibDataSource.getSession();
 			tx = session.beginTransaction();

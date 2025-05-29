@@ -66,4 +66,6 @@ public abstract class BaseDTO implements Serializable, Comparable<BaseDTO>, Drop
 	public int compareTo(BaseDTO next) {
 		return getValue().compareTo(next.getValue());
 	}
+	
+	
 }
