@@ -95,7 +95,7 @@
 					} else if (userDto.getRoleId() == RoleDTO.ADMIN) {
 				%>
 
-				<li class="nav-item dropdown" style="padding-left: 5px;"><a
+				<li class="nav-item dropdown" style="padding-left: 4px;"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">User</font>
@@ -107,7 +107,7 @@
 							class="fa fa-user-friends"></i>User List</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Marksheet
@@ -125,7 +125,7 @@
 							class="fa fa-copy"></i>Get Marksheet</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Role</font>
@@ -136,7 +136,7 @@
 							href="<%=ORSView.ROLE_LIST_CTL%>"><i
 							class="fa fa-user-friends"></i>Role List</a>
 					</div></li>
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">College</font>
@@ -147,7 +147,7 @@
 							href="<%=ORSView.COLLEGE_LIST_CTL%>"><i
 							class="fa fa-building"></i>College List </a>
 					</div></li>
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Course
@@ -158,7 +158,7 @@
 							href="<%=ORSView.COURSE_LIST_CTL%>"><i
 							class="fa fa-sort-amount-down"></i>Course List </a>
 					</div></li>
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Student</font>
@@ -169,7 +169,7 @@
 							class="dropdown-item" href="<%=ORSView.STUDENT_LIST_CTL%>"><i
 							class="fa fa-users"></i>Student List</a>
 					</div></li>
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Faculty
@@ -181,7 +181,7 @@
 							List</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Time
@@ -193,7 +193,7 @@
 							href="<%=ORSView.TIMETABLE_LIST_CTL%>"><i class="fa fa-clock"></i>TimeTable
 							List</a>
 					</div></li>
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Subject</font>
@@ -206,7 +206,7 @@
 						</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<li class="nav-item dropdown" style="padding-left: 4px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Product
