@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 /**
  * ModelFactory decides which model implementation run
  * 
- * @author Abeet Patel
+ * @author Anshul Prajapati
  *
  */
 public final class ModelFactory {
@@ -25,21 +25,6 @@ public final class ModelFactory {
 			mFactory = new ModelFactory();
 		}
 		return mFactory;
-	}
-
-	public StaffMemberModelInt getStaffMemberModel() {
-		StaffMemberModelInt staffMemberModel = (StaffMemberModelInt) modelCache.get("staffMemberModel");
-		if (staffMemberModel == null) {
-			if ("Hibernate".equals(DATABASE)) {
-				staffMemberModel = new StaffMemberHibImpl();
-			}
-			if ("JDBC".equals(DATABASE)) {
-				staffMemberModel = new StaffMemberJDBCImpl();
-			}
-			modelCache.put("staffMemberModel", staffMemberModel);
-		}
-
-		return staffMemberModel;
 	}
 
 	public ProductModelInt getProductModel() {

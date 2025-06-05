@@ -26,7 +26,7 @@ import net.sf.jasperreports.engine.JasperReport;
  * Jasper functionality Controller. Performs operation for Print pdf of
  * MarksheetMeriteList
  *
- * @author Abeet Patel
+ * @author Kuldeep Badadwal
  */
 @WebServlet(name = "JasperCtl", urlPatterns = { "/ctl/JasperCtl" })
 public class JasperCtl extends BaseCtl {
@@ -40,13 +40,13 @@ public class JasperCtl extends BaseCtl {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
-			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
-
+			
 			/* Compilation of jrxml file */
-			JasperReport jasperReport = JasperCompileManager.compileReport(rb.getString("jasprctl"));
+			JasperReport jasperReport = JasperCompileManager
+					.compileReport("C:\\Users\\kulde\\JaspersoftWorkspace\\MyReports\\Merit.jrxml");
 
 			HttpSession session = request.getSession(true);
-			UserDTO dto = (UserDTO) session.getAttribute("user"); 
+			UserDTO dto = (UserDTO) session.getAttribute("user");
 			dto.getFirstName();
 			dto.getLastName();
 
@@ -54,8 +54,11 @@ public class JasperCtl extends BaseCtl {
 			map.put("ID", 1l);
 			java.sql.Connection conn = null;
 
-			String Database = rb.getString("DATABASE");
+			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
 
+
+			String Database = rb.getString("DATABASE");
+			
 			if ("Hibernate".equalsIgnoreCase(Database)) {
 				conn = ((SessionImpl) HibDataSource.getSession()).connection();
 			}

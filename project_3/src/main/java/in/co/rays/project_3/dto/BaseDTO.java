@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 /**
  * Parent class of all Dto in application. It contains generic attributes.
  * 
- * @author Abeet Patel
+ * @author Anshul Prajapati
  *
  */
 
@@ -66,6 +66,4 @@ public abstract class BaseDTO implements Serializable, Comparable<BaseDTO>, Drop
 	public int compareTo(BaseDTO next) {
 		return getValue().compareTo(next.getValue());
 	}
-	
-	
 }

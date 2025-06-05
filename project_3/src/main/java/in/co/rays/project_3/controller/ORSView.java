@@ -3,7 +3,7 @@ package in.co.rays.project_3.controller;
 /**
  * ORS View Provide Loose Coupling
  * 
- * @author Abeet Patel
+ * @author Anshul Prajapati
  *
  */
 public interface ORSView {
@@ -45,8 +45,6 @@ public interface ORSView {
 	public String SUBJECT_LIST_VIEW = PAGE_FOLDER + "/SubjectListView.jsp";
 	public String PRODUCT_VIEW = PAGE_FOLDER + "/ProductView.jsp";
 	public String PRODUCT_LIST_VIEW = PAGE_FOLDER + "/ProductListView.jsp";
-	public String STAFF_MEMBER_VIEW = PAGE_FOLDER + "/StaffMemberView.jsp";
-	public String STAFF_MEMBER_LIST_VIEW = PAGE_FOLDER + "/StaffMemberListView.jsp";
 
 
 	public String ERROR_CTL = APP_CONTEXT + "/ErrorCtl";
@@ -75,8 +73,6 @@ public interface ORSView {
 	public String TIMETABLE_LIST_CTL = APP_CONTEXT + "/ctl/TimeTableListCtl";
 	public String PRODUCT_CTL = APP_CONTEXT + "/ctl/ProductCtl";
 	public String PRODUCT_LIST_CTL = APP_CONTEXT + "/ctl/ProductListCtl";
-	public String STAFF_MEMBER_CTL = APP_CONTEXT + "/ctl/StaffMemberCtl";
-	public String STAFF_MEMBER_LIST_CTL = APP_CONTEXT + "/ctl/StaffMemberListCtl";
 
 	public String GET_MARKSHEET_CTL = APP_CONTEXT + "/ctl/GetMarksheetCtl";
 	public String CHANGE_PASSWORD_CTL = APP_CONTEXT + "/ctl/ChangePasswordCtl";
