@@ -27,6 +27,21 @@ public final class ModelFactory {
 		return mFactory;
 	}
 
+	public StaffMemberModelInt getStaffMemberModel() {
+		StaffMemberModelInt staffMemberModel = (StaffMemberModelInt) modelCache.get("staffMemberModel");
+		if (staffMemberModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				staffMemberModel = new StaffMemberHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				staffMemberModel = new StaffMemberJDBCImpl();
+			}
+			modelCache.put("staffMemberModel", staffMemberModel);
+		}
+
+		return staffMemberModel;
+	}
+
 	public ProductModelInt getProductModel() {
 		ProductModelInt productModel = (ProductModelInt) modelCache.get("productModel");
 		if (productModel == null) {
