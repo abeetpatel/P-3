@@ -16,7 +16,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of Role model
- * @author Anshul Prajapati
+ * @author Abeet Patel
  *
  */
 public class RoleModelJDBCImpl implements RoleModelInt{

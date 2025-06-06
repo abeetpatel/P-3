@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url('img/onlineresultsys.jpg');
+	background-image: url('img/circule.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }

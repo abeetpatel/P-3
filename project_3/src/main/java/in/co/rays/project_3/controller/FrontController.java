@@ -17,7 +17,7 @@ import in.co.rays.project_3.util.ServletUtility;
 
 /**
  * Front Functionality ctl. to perform session checking and logging operation
- * @author Anshul Prajapati
+ * @author Abeet Patel
  *
  */
 @WebFilter(urlPatterns={"/ctl/*","/doc/*"})

@@ -17,14 +17,16 @@ public class ProductModelHibImp implements ProductModelInt {
 
 	@Override
 	public long add(ProductDTO dto) throws ApplicationException, DuplicateRecordException {
-		Session session = null;
+		Session session = HibDataSource.getSession();
+		;
 		Transaction tx = null;
-//		ProductDTO duplicateCollegeName = fingByName(dto.getProductName());
-//		if (duplicateCollegeName != null) {
-//			throw new DuplicateRecordException("college name already exist");
-//		}
+
+		ProductDTO duplicateProductName = fingByName(dto.getProductName());
+		if (duplicateProductName != null) {
+			throw new DuplicateRecordException("Product name already exist");
+		}
+
 		try {
-			session = HibDataSource.getSession();
 			tx = session.beginTransaction();
 			session.save(dto);
 			tx.commit();
@@ -34,7 +36,7 @@ public class ProductModelHibImp implements ProductModelInt {
 				tx.rollback();
 
 			}
-			throw new ApplicationException("Exception in college Add " + e.getMessage());
+			throw new ApplicationException("Exception in Product Add " + e.getMessage());
 		} finally {
 			session.close();
 		}
@@ -55,7 +57,7 @@ public class ProductModelHibImp implements ProductModelInt {
 			if (tx != null) {
 				tx.rollback();
 			}
-			throw new ApplicationException("Exception in college Delete" + e.getMessage());
+			throw new ApplicationException("Exception in Product Delete" + e.getMessage());
 		} finally {
 			session.close();
 		}
@@ -81,7 +83,7 @@ public class ProductModelHibImp implements ProductModelInt {
 			if (tx != null) {
 				tx.rollback();
 			}
-			throw new ApplicationException("Exception in college update" + e.getMessage());
+			throw new ApplicationException("Exception in Product update" + e.getMessage());
 		} finally {
 			session.close();
 		}
@@ -109,7 +111,7 @@ public class ProductModelHibImp implements ProductModelInt {
 
 		} catch (HibernateException e) {
 
-			throw new ApplicationException("Exception : Exception in  College list");
+			throw new ApplicationException("Exception : Exception in  Product list");
 		} finally {
 			session.close();
 		}
@@ -151,7 +153,7 @@ public class ProductModelHibImp implements ProductModelInt {
 			list = criteria.list();
 		} catch (HibernateException e) {
 			e.printStackTrace();
-			throw new ApplicationException("Exception in college search");
+			throw new ApplicationException("Exception in Product search");
 		} finally {
 			session.close();
 		}
@@ -170,7 +172,7 @@ public class ProductModelHibImp implements ProductModelInt {
 			System.out.println(dto);
 		} catch (HibernateException e) {
 
-			throw new ApplicationException("Exception : Exception in getting course by pk");
+			throw new ApplicationException("Exception : Exception in getting Product by pk");
 		} finally {
 			session.close();
 		}
@@ -192,7 +194,7 @@ public class ProductModelHibImp implements ProductModelInt {
 			}
 		} catch (HibernateException e) {
 
-			throw new ApplicationException("Exception in getting User by Login " + e.getMessage());
+			throw new ApplicationException("Exception in getting Product by name " + e.getMessage());
 
 		} finally {
 			session.close();

@@ -17,7 +17,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of Marksheet model
- * @author Anshul Prajapati
+ * @author Abeet Patel
  *
  */
 public class MarksheetModelJDBCImpl implements MarksheetModelInt {

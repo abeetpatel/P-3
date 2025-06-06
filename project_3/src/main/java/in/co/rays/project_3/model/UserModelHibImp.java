@@ -25,7 +25,7 @@ import in.co.rays.project_3.util.HibDataSource;
 /**
  * Hibernate implements of User model
  * 
- * @author Anshul Prajapati
+ * @author Abeet Patel
  *
  */
 public class UserModelHibImp implements UserModelInt {
@@ -95,7 +95,7 @@ public class UserModelHibImp implements UserModelInt {
 		UserDTO existDto = findByLogin(dto.getLogin());
 		// Check if updated LoginId already exist
 		if (existDto != null && existDto.getId() != dto.getId()) {
-			// throw new DuplicateRecordException("LoginId is already exist");
+			 throw new DuplicateRecordException("LoginId is already exist");
 		}
 
 		try {
@@ -199,7 +199,7 @@ public class UserModelHibImp implements UserModelInt {
 			Criteria criteria = session.createCriteria(UserDTO.class);
 			if (dto != null) {
 				if (dto.getId() != null) {
-					criteria.add(Restrictions.like("id", dto.getId()));
+					criteria.add(Restrictions.eq("id", dto.getId()));
 				}
 				if (dto.getFirstName() != null && dto.getFirstName().length() > 0) {
 					criteria.add(Restrictions.like("firstName", dto.getFirstName() + "%"));

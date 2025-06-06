@@ -21,7 +21,7 @@ import in.co.rays.project_3.util.ServletUtility;
 
 /**
  * role list functionality controller. to show list and search of role operation
- * @author Anshul Prajapati
+ * @author Abeet Patel
  *
  */
 @WebServlet(name = "RoleListCtl", urlPatterns = { "/ctl/RoleListCtl" })
